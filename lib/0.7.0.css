@@ -406,6 +406,9 @@
   font-size: 9px;
   vertical-align: 1px;
 }
+.getshare .getshare-button.getshare-button-none.getshare-icon:before {
+  font-size: 8px;
+}
 .getshare .getshare-text {
   font-size: 10px;
   vertical-align: 2px;
