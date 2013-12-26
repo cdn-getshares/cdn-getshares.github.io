@@ -1,0 +1,62 @@
+fs = require "fs"
+path = require "path"
+
+{print} = require "sys"
+{spawn} = require "child_process"
+
+build = (options, callback) ->
+  out = options?.out?[0] or "lib"
+  src = "src"
+
+  init = (cb) ->
+    filesToDelete = 0
+    fs.readdir out, (err, files) ->
+      return process.stderr.write err if err?
+      return cb() if files.length is 0
+      filesToDelete = files.length
+      files.forEach (file, index) ->
+        fs.unlink path.join(out, file), (err) ->
+          process.stderr.write err if err?
+          cb() if --filesToDelete is 0
+
+  convert = () ->
+    coffee = spawn "coffee", ["-m", "-c", "-o", out, src]
+    coffee.stderr.on "data", (data) -> process.stderr.write data.toString()
+    coffee.stdout.on "data", (data) -> print data.toString()
+    coffee.on "exit", (code) ->
+      fs.readdir out, (err, files) ->
+        return process.stderr.write err if err? 
+        print "coffee done #{src}/* -> #{out}/* (#{files.length} files)\n"
+        files.forEach (file, index) ->
+          if /\.js$/.test file
+            js = path.join out, file
+            min = js.replace /\.js$/, ".min.js"
+            map = js.replace /\.js$/, ".min.map"
+            mapUrl = file.replace /\.js$/, ".min.map"
+            uglify = spawn "uglifyjs", [js, "-o", min, "--source-map", map, "--comments", "all"]
+            uglify.stderr.on "data", (data) -> process.stderr.write data.toString()
+            uglify.stdout.on "data", (data) -> print data.toString()
+            uglify.on "exit", (code) -> print "uglify done #{js} -> #{min} (#{map})\n"
+      callback?() if code is 0
+    stylus = spawn "stylus", [src, "--out", out, "--compress", "--include", "node_modules/nib/lib"]
+    stylus.stderr.on "data", (data) -> process.stderr.write data.toString()
+    stylus.stdout.on "data", (data) -> print data.toString()
+    stylus.on "exit", (code) ->
+      print "stylus done #{src} -> #{out} (minified)\n"
+      fs.readdir out, (err, files) ->
+        return process.stderr.write err if err? 
+        for file in files
+          if /\.css$/.test file
+            srcFile = path.join out, file
+            dstFile = srcFile.replace /\.css/, ".min.css"
+            fs.renameSync srcFile, dstFile
+        stylus = spawn "stylus", [src, "--out", out, "--include", "node_modules/nib/lib"]
+        stylus.stderr.on "data", (data) -> process.stderr.write data.toString()
+        stylus.stdout.on "data", (data) -> print data.toString()
+        stylus.on "exit", (code) -> print "stylus done #{src} -> #{out}\n"
+  init convert
+
+option "", "--out [OUT*]", "define out path"
+
+task "build", "Build lib/ from src/", (options) ->
+  build options
