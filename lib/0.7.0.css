@@ -36,6 +36,15 @@
   text-align: center;
   font-family: 'zocial', sans-serif;
 }
+.getshare .getshare-button.getshare-button-none {
+  background-color: #3b96d4;
+}
+.getshare .getshare-button.getshare-button-none.getshare-icon:before {
+  content: 'None';
+}
+.getshare .getshare-button.getshare-button-none .split {
+  color: #3b96d4;
+}
 .getshare .getshare-button.getshare-button-twitter,
 .getshare .getshare-button.getshare-button-twitterProfile {
   background-color: #2daae1;
@@ -374,6 +383,7 @@
 .getshare .getshare-button.getshare-button-codepenPen .split {
   color: #222;
 }
+.getshare .getshare-button.getshare-button-none.getshare-icon:before,
 .getshare .getshare-button.getshare-button-hackernews.getshare-icon:before,
 .getshare .getshare-button.getshare-button-bitcoin.getshare-icon:before,
 .getshare .getshare-button.getshare-button-litecoin.getshare-icon:before,
