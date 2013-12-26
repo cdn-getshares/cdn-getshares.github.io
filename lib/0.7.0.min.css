@@ -1,4 +1,4 @@
-@import url("http://ui.getshar.es/fonts/zocial.css");
+@import url("http://cdn.getshar.es/fonts/zocial.css");
 [class*="zocial-"]:before{font-family:'zocial',sans-serif}
 .getshare{position:relative;display:inline-block;height:20px;margin:5px;}
 .getshare input[type=checkbox]{display:none}
