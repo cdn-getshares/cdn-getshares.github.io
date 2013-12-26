@@ -253,7 +253,7 @@ class @GetShare
           url: "https://twitter.com/{id}"
         counter:
           query:
-            url: "/counts/twitterProfile/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/twitterProfile/{id}/?callback=?"
             path: "followers_count"
       when "facebook"
         button: {attr: {title: "Share on Facebook"}}
@@ -313,7 +313,7 @@ class @GetShare
           url: "https://plus.google.com/share?url={encUrl}"
         counter:
           query:
-            url: "/counts/googleplus/{encUrl}/?callback=?"
+            url: "http://api.getshar.es/counts/googleplus/{encUrl}/?callback=?"
             path: ""
       when "flattr" #Scraping - No Client JSONP API found
         button: {attr: {title: "Donate with Flattr"}}
@@ -323,7 +323,7 @@ class @GetShare
           url: "https://flattr.com/submit/auto?url={encUrl}&user_id={id}"
         counter:
           query:
-            url: "/counts/flattr/{encUrl}/?callback=?"
+            url: "http://api.getshar.es/counts/flattr/{encUrl}/?callback=?"
             path: ""
       when "stumbleupon" #JSON to JSONP - No API with JSONP found
         button: {attr: {title: "Share on StumbleUpon"}}
@@ -333,7 +333,7 @@ class @GetShare
           url: "http://www.stumbleupon.com/submit?url={encUrl}&title={encMessage}"
         counter:
           query:
-            url: "/counts/stumbleupon/{encUrl}/?callback=?"
+            url: "http://api.getshar.es/counts/stumbleupon/{encUrl}/?callback=?"
             path: "result.views"
       when "buffer"
         button: {attr: {title: "Share on Buffer"}}
@@ -363,7 +363,7 @@ class @GetShare
           url: "https://getpocket.com/save?url={encUrl}&title={encMessage}"
         counter:
           query:
-            url: "/counts/pocket/{encUrl}/?callback=?"
+            url: "http://api.getshar.es/counts/pocket/{encUrl}/?callback=?"
             path: ""
       when "weibo" #Two JSONP calls needed - Shorten URL & get count of short Url - using foreign API-Key
         button: {attr: {title: "Share on Weibo"}}
@@ -384,7 +384,7 @@ class @GetShare
           url: "http://codepen.io/{id}"
         counter:
           query:
-            url: "/counts/codepenProfile/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/codepenProfile/{id}/?callback=?"
             path: ""
       when "codepenPen"
         button: {attr: {title: "View Pen on CodePen"}}
@@ -394,7 +394,7 @@ class @GetShare
           url: "http://codepen.io/{id}/full/{itemId}"
         counter:
           query:
-            url: "/counts/codepenPen/{id}/{itemId}/?callback=?"
+            url: "http://api.getshar.es/counts/codepenPen/{id}/{itemId}/?callback=?"
             path: ""
       when "githubProfile"
         button: {attr: {title: "View Profile on GitHub"}}
@@ -404,7 +404,7 @@ class @GetShare
           url: "https://github.com/{id}"
         counter:
           query:
-            url: "/counts/githubProfile/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/githubProfile/{id}/?callback=?"
             path: "followers"
       when "githubRepository"
         button: {attr: {title: "View Repository on GitHub"}}
@@ -414,7 +414,7 @@ class @GetShare
           url: "https://github.com/{id}/{itemId}"
         counter:
           query:
-            url: "/counts/githubRepository/{id}/{itemId}/?callback=?"
+            url: "http://api.getshar.es/counts/githubRepository/{id}/{itemId}/?callback=?"
             path: "stargazers_count"
       when "dribbblePlayerLikes"
         button: {attr: {title: "View Profile on Dribbble"}}
@@ -454,7 +454,7 @@ class @GetShare
           url: "https://www.xing.com/social_plugins/share/new?url={encUrl}"
         counter:
           query:
-            url: "/counts/xing/{encUrl}/?callback=?"
+            url: "http://api.getshar.es/counts/xing/{encUrl}/?callback=?"
             path: ""
       when "hackernews" #JSON to JSONP - No (working, keyless) API with JSONP found
         button: {attr: {title: "View on Hacker News"}}
@@ -464,125 +464,125 @@ class @GetShare
           url: "https://news.ycombinator.com/item?id={id}"
         counter:
           query:
-            url: "/counts/hackernews/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/hackernews/{id}/?callback=?"
             path: ""
       when "bitcoin" #JSON to JSONP - No API with JSONP found
         button: {attr: {title: "Donate Bitcoin"}}
         popover: {content: @getCoinContent "Bitcoin", "bitcoin"}
         counter:
           query:
-            url: "/counts/bitcoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/bitcoin/{id}/?callback=?"
             path: "n_tx"
       when "litecoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate Litecoin"}}
         popover: {content: @getCoinContent "Litecoin", "litecoin"}
         counter:
           query:
-            url: "/counts/litecoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/litecoin/{id}/?callback=?"
             path: ""
       when "feathercoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate Feathercoin"}}
         popover: {content: @getCoinContent "Feathercoin", "feathercoin"}
         counter:
           query:
-            url: "/counts/feathercoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/feathercoin/{id}/?callback=?"
             path: ""
       when "freicoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate Freicoin"}}
         popover: {content: @getCoinContent "Freicoin", "freicoin"}
         counter:
           query:
-            url: "/counts/freicoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/freicoin/{id}/?callback=?"
             path: ""
       when "terracoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate Terracoin"}}
         popover: {content: @getCoinContent "Terracoin", "terracoin"}
         counter:
           query:
-            url: "/counts/terracoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/terracoin/{id}/?callback=?"
             path: ""
       when "peercoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate Peercoin"}}
         popover: {content: @getCoinContent "Peercoin", "peercoin"}
         counter:
           query:
-            url: "/counts/peercoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/peercoin/{id}/?callback=?"
             path: ""
       when "novacoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate Novacoin"}}
         popover: {content: @getCoinContent "Novacoin", "novacoin"}
         counter:
           query:
-            url: "/counts/novacoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/novacoin/{id}/?callback=?"
             path: ""
       when "bbqcoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate BBQCoin"}}
         popover: {content: @getCoinContent "BBQCoin", "bbqcoin"}
         counter:
           query:
-            url: "/counts/bbqcoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/bbqcoin/{id}/?callback=?"
             path: ""
       when "bytecoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate Bytecoin"}}
         popover: {content: @getCoinContent "Bytecoin", "bytecoin"}
         counter:
           query:
-            url: "/counts/bytecoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/bytecoin/{id}/?callback=?"
             path: ""
       when "bitbar" #Scraping - No API with JSON found
         button: {attr: {title: "Donate BitBar"}}
         popover: {content: @getCoinContent "BitBar", "bitbar"}
         counter:
           query:
-            url: "/counts/bitbar/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/bitbar/{id}/?callback=?"
             path: ""
       when "digitalcoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate Digitalcoin"}}
         popover: {content: @getCoinContent "Digitalcoin", "digitalcoin"}
         counter:
           query:
-            url: "/counts/digitalcoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/digitalcoin/{id}/?callback=?"
             path: ""
       when "jkcoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate JKCoin"}}
         popover: {content: @getCoinContent "JKCoin", "jkcoin"}
         counter:
           query:
-            url: "/counts/jkcoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/jkcoin/{id}/?callback=?"
             path: ""
       when "frankos" #Scraping - No API with JSON found
         button: {attr: {title: "Donate Frankos"}}
         popover: {content: @getCoinContent "Frankos", "frankos"}
         counter:
           query:
-            url: "/counts/frankos/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/frankos/{id}/?callback=?"
             path: ""
       when "goldcoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate Goldcoin"}}
         popover: {content: @getCoinContent "Goldcoin", "goldcoin"}
         counter:
           query:
-            url: "/counts/goldcoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/goldcoin/{id}/?callback=?"
             path: ""
       when "worldcoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate Worldcoin"}}
         popover: {content: @getCoinContent "Worldcoin", "worldcoin"}
         counter:
           query:
-            url: "/counts/worldcoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/worldcoin/{id}/?callback=?"
             path: ""
       when "craftcoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate CraftCoin"}}
         popover: {content: @getCoinContent "CraftCoin", "craftcoin"}
         counter:
           query:
-            url: "/counts/craftcoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/craftcoin/{id}/?callback=?"
             path: ""
       when "quarkcoin" #Scraping - No API with JSON found
         button: {attr: {title: "Donate QuarkCoin"}}
         popover: {content: @getCoinContent "QuarkCoin", "quarkcoin"}
         counter:
           query:
-            url: "/counts/quarkcoin/{id}/?callback=?"
+            url: "http://api.getshar.es/counts/quarkcoin/{id}/?callback=?"
             path: ""
       else {}
