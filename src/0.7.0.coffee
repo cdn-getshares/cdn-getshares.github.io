@@ -165,7 +165,11 @@ class @GetShare
     if url? and @network is "weibo" and url.indexOf("http://t.cn") is -1
       @counter.query.encUrlShortener = @replaceString @counter.query.urlShortener
       $.getJSON @counter.query.encUrlShortener, (res) ->
-        gs.setUrl res.data.urls[0].url_short, callback
+        if res?.data?.urls?[0].url_short?
+          gs.setUrl res.data.urls[0].url_short, callback
+        else
+          gs.counter.count = 404
+          gs.updateCounterHtml()
       return
     @getCount (elem) ->
       gs.updateCounterHtml()
