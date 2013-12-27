@@ -347,8 +347,10 @@ class @GetShare
           url: "https://bufferapp.com/add/?url={encUrl}&text={encMessage}"
         counter:
           query:
-            url: "counts/buffer/{encUrl}/?callback=?"
-            path: ""
+            url: "https://api.bufferapp.com/1/links/shares.json?url={encUrl}&callback=?"
+            path: "shares"
+            #url: "http://api.getshar.es/counts/buffer/{encUrl}/?callback=?"
+            #path: ""
       when "vk" #JSONP callback is fixed - workaround is active
         button: {attr: {title: "Share on VKontakte"}}
         popover:
