@@ -404,8 +404,11 @@ loader-color(c)
       text-align center
       width 100%
       color #6495ED
-  input[type=checkbox]:checked ~ .getshare-popover
-    display block
+  input[type=checkbox]
+    &:checked
+    &[checked=checked]
+      ~ .getshare-popover
+        display block
 
 @keyframes getshareloader
   0%

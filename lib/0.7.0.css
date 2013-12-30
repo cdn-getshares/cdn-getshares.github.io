@@ -574,7 +574,8 @@
   width: 100%;
   color: #6495ed;
 }
-.getshare input[type=checkbox]:checked ~ .getshare-popover {
+.getshare input[type=checkbox]:checked ~ .getshare-popover,
+.getshare input[type=checkbox][checked=checked] ~ .getshare-popover {
   display: block;
 }
 @-moz-keyframes getshareloader {
