@@ -1,8 +1,8 @@
-@import url("http://getshar.es/fonts/zocial.css");
+@import url("http://getshar.es/fonts/0.7.0/zocial.css");
 .getshare{position:relative;display:inline-block;height:20px;margin:5px;}
 .getshare input[type=checkbox]{display:none}
 .getshare .getshare-button{cursor:pointer;display:inline-block;height:16px;text-decoration:none;font-family:Arial,Sans-Serif;font-size:14px;line-height:16px;-webkit-border-radius:2px;border-radius:2px;min-width:58px;text-align:left;padding:2px;color:#fff;}
-.getshare .getshare-button:before{font-size:12px;margin-left:1px;vertical-align:1px;display:inline-block;width:17px;text-align:center;font-family:'zocial',sans-serif}
+.getshare .getshare-button:before{font-size:12px;margin-left:1px;vertical-align:1px;display:inline-block;width:17px;text-align:center;font-family:'zocial-0-7-0',sans-serif}
 .getshare .getshare-button.getshare-button-none{background-color:#3b96d4;}
 .getshare .getshare-button.getshare-button-none.getshare-icon:before{content:'None'}
 .getshare .getshare-button.getshare-button-none .split{color:#3b96d4}
@@ -13,7 +13,7 @@
 .getshare .getshare-button.getshare-button-facebook.getshare-icon:before{content:'f'}
 .getshare .getshare-button.getshare-button-facebook .split{color:#3b5998}
 .getshare .getshare-button.getshare-button-pinterest{background-color:#ca2128;}
-.getshare .getshare-button.getshare-button-pinterest.getshare-icon:before{content:'1'}
+.getshare .getshare-button.getshare-button-pinterest.getshare-icon:before{content:'p'}
 .getshare .getshare-button.getshare-button-pinterest .split{color:#ca2128}
 .getshare .getshare-button.getshare-button-linkedin{background-color:#1783bc;}
 .getshare .getshare-button.getshare-button-linkedin.getshare-icon:before{content:'L'}
@@ -22,7 +22,7 @@
 .getshare .getshare-button.getshare-button-delicious.getshare-icon:before{content:'#'}
 .getshare .getshare-button.getshare-button-delicious .split{color:#2873cc}
 .getshare .getshare-button.getshare-button-reddit{background-color:#f26110;}
-.getshare .getshare-button.getshare-button-reddit.getshare-icon:before{content:'>'}
+.getshare .getshare-button.getshare-button-reddit.getshare-icon:before{content:'R'}
 .getshare .getshare-button.getshare-button-reddit .split{color:#f26110}
 .getshare .getshare-button.getshare-button-googleplus{background-color:#dd4b39;}
 .getshare .getshare-button.getshare-button-googleplus.getshare-icon:before{content:'+'}
@@ -31,19 +31,19 @@
 .getshare .getshare-button.getshare-button-flattr.getshare-icon:before{content:'%'}
 .getshare .getshare-button.getshare-button-flattr .split{color:#66b115}
 .getshare .getshare-button.getshare-button-stumbleupon{background-color:#ea4b24;}
-.getshare .getshare-button.getshare-button-stumbleupon.getshare-icon:before{content:'/'}
+.getshare .getshare-button.getshare-button-stumbleupon.getshare-icon:before{content:'S'}
 .getshare .getshare-button.getshare-button-stumbleupon .split{color:#ea4b24}
 .getshare .getshare-button.getshare-button-buffer{background-color:#999;}
-.getshare .getshare-button.getshare-button-buffer.getshare-icon:before{content:'\00E5'}
+.getshare .getshare-button.getshare-button-buffer.getshare-icon:before{content:'b'}
 .getshare .getshare-button.getshare-button-buffer .split{color:#999}
 .getshare .getshare-button.getshare-button-vk{background-color:#4b709a;}
-.getshare .getshare-button.getshare-button-vk.getshare-icon:before{content:'N'}
+.getshare .getshare-button.getshare-button-vk.getshare-icon:before{content:'V'}
 .getshare .getshare-button.getshare-button-vk .split{color:#4b709a}
 .getshare .getshare-button.getshare-button-pocket{background-color:#ee4056;}
-.getshare .getshare-button.getshare-button-pocket.getshare-icon:before{content:'\00E7'}
+.getshare .getshare-button.getshare-button-pocket.getshare-icon:before{content:'P'}
 .getshare .getshare-button.getshare-button-pocket .split{color:#ee4056}
 .getshare .getshare-button.getshare-button-weibo{background-color:#eb182c;}
-.getshare .getshare-button.getshare-button-weibo.getshare-icon:before{content:'J'}
+.getshare .getshare-button.getshare-button-weibo.getshare-icon:before{content:'W'}
 .getshare .getshare-button.getshare-button-weibo .split{color:#eb182c}
 .getshare .getshare-button.getshare-button-githubProfile,.getshare .getshare-button.getshare-button-githubRepository{background-color:#bbb;}
 .getshare .getshare-button.getshare-button-githubProfile.getshare-icon:before,.getshare .getshare-button.getshare-button-githubRepository.getshare-icon:before{content:'g'}
@@ -109,7 +109,7 @@
 .getshare .getshare-button.getshare-button-quarkcoin.getshare-icon:before{content:'QRK'}
 .getshare .getshare-button.getshare-button-quarkcoin .split{color:#3f93df}
 .getshare .getshare-button.getshare-button-codepenProfile,.getshare .getshare-button.getshare-button-codepenPen{background-color:#222;}
-.getshare .getshare-button.getshare-button-codepenProfile.getshare-icon:before,.getshare .getshare-button.getshare-button-codepenPen.getshare-icon:before{content:'';height:12px;width:14px;background-image:url("http://blog.codepen.io/wp-content/uploads/2012/06/Button-White-Small.png");-webkit-background-size:24px;-moz-background-size:24px;background-size:24px;background-position:-5px -6px;vertical-align:-1px}
+.getshare .getshare-button.getshare-button-codepenProfile.getshare-icon:before,.getshare .getshare-button.getshare-button-codepenPen.getshare-icon:before{content:'c'}
 .getshare .getshare-button.getshare-button-codepenProfile .split,.getshare .getshare-button.getshare-button-codepenPen .split{color:#222}
 .getshare .getshare-button.getshare-button-none.getshare-icon:before,.getshare .getshare-button.getshare-button-hackernews.getshare-icon:before,.getshare .getshare-button.getshare-button-bitcoin.getshare-icon:before,.getshare .getshare-button.getshare-button-litecoin.getshare-icon:before,.getshare .getshare-button.getshare-button-feathercoin.getshare-icon:before,.getshare .getshare-button.getshare-button-freicoin.getshare-icon:before,.getshare .getshare-button.getshare-button-terracoin.getshare-icon:before,.getshare .getshare-button.getshare-button-peercoin.getshare-icon:before,.getshare .getshare-button.getshare-button-novacoin.getshare-icon:before,.getshare .getshare-button.getshare-button-bbqcoin.getshare-icon:before,.getshare .getshare-button.getshare-button-bytecoin.getshare-icon:before,.getshare .getshare-button.getshare-button-bitbar.getshare-icon:before,.getshare .getshare-button.getshare-button-digitalcoin.getshare-icon:before,.getshare .getshare-button.getshare-button-jkcoin.getshare-icon:before,.getshare .getshare-button.getshare-button-frankos.getshare-icon:before,.getshare .getshare-button.getshare-button-goldcoin.getshare-icon:before,.getshare .getshare-button.getshare-button-worldcoin.getshare-icon:before,.getshare .getshare-button.getshare-button-craftcoin.getshare-icon:before,.getshare .getshare-button.getshare-button-quarkcoin.getshare-icon:before{font-family:Arial,Sans-Serif;font-size:9px;vertical-align:1px;margin-left:0}
 .getshare .getshare-button.getshare-button-none.getshare-icon:before{font-size:8px;vertical-align:2px}

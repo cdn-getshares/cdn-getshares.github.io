@@ -1,4 +1,4 @@
-@import url("http://getshar.es/fonts/zocial.css");
+@import url("http://getshar.es/fonts/0.7.0/zocial.css");
 .getshare {
   position: relative;
   display: inline-block;
@@ -30,7 +30,7 @@
   display: inline-block;
   width: 17px;
   text-align: center;
-  font-family: 'zocial', sans-serif;
+  font-family: 'zocial-0-7-0', sans-serif;
 }
 .getshare .getshare-button.getshare-button-none {
   background-color: #3b96d4;
@@ -66,7 +66,7 @@
   background-color: #ca2128;
 }
 .getshare .getshare-button.getshare-button-pinterest.getshare-icon:before {
-  content: '1';
+  content: 'p';
 }
 .getshare .getshare-button.getshare-button-pinterest .split {
   color: #ca2128;
@@ -93,7 +93,7 @@
   background-color: #f26110;
 }
 .getshare .getshare-button.getshare-button-reddit.getshare-icon:before {
-  content: '>';
+  content: 'R';
 }
 .getshare .getshare-button.getshare-button-reddit .split {
   color: #f26110;
@@ -120,7 +120,7 @@
   background-color: #ea4b24;
 }
 .getshare .getshare-button.getshare-button-stumbleupon.getshare-icon:before {
-  content: '/';
+  content: 'S';
 }
 .getshare .getshare-button.getshare-button-stumbleupon .split {
   color: #ea4b24;
@@ -129,7 +129,7 @@
   background-color: #999;
 }
 .getshare .getshare-button.getshare-button-buffer.getshare-icon:before {
-  content: '\00E5';
+  content: 'b';
 }
 .getshare .getshare-button.getshare-button-buffer .split {
   color: #999;
@@ -138,7 +138,7 @@
   background-color: #4b709a;
 }
 .getshare .getshare-button.getshare-button-vk.getshare-icon:before {
-  content: 'N';
+  content: 'V';
 }
 .getshare .getshare-button.getshare-button-vk .split {
   color: #4b709a;
@@ -147,7 +147,7 @@
   background-color: #ee4056;
 }
 .getshare .getshare-button.getshare-button-pocket.getshare-icon:before {
-  content: '\00E7';
+  content: 'P';
 }
 .getshare .getshare-button.getshare-button-pocket .split {
   color: #ee4056;
@@ -156,7 +156,7 @@
   background-color: #eb182c;
 }
 .getshare .getshare-button.getshare-button-weibo.getshare-icon:before {
-  content: 'J';
+  content: 'W';
 }
 .getshare .getshare-button.getshare-button-weibo .split {
   color: #eb182c;
@@ -365,15 +365,7 @@
 }
 .getshare .getshare-button.getshare-button-codepenProfile.getshare-icon:before,
 .getshare .getshare-button.getshare-button-codepenPen.getshare-icon:before {
-  content: '';
-  height: 12px;
-  width: 14px;
-  background-image: url("http://blog.codepen.io/wp-content/uploads/2012/06/Button-White-Small.png");
-  -webkit-background-size: 24px;
-  -moz-background-size: 24px;
-  background-size: 24px;
-  background-position: -5px -6px;
-  vertical-align: -1px;
+  content: 'c';
 }
 .getshare .getshare-button.getshare-button-codepenProfile .split,
 .getshare .getshare-button.getshare-button-codepenPen .split {
