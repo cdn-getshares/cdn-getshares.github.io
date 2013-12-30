@@ -1,8 +1,4 @@
 @import url("http://cdn.getshar.es/fonts/zocial.css");
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
-}
 .getshare {
   position: relative;
   display: inline-block;
