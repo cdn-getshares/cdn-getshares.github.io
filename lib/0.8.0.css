@@ -1,0 +1,684 @@
+@import url("http://beta.getshar.es/fonts/0.8.0/zocial.css");
+.getshare {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  margin: 5px;
+}
+.getshare input[type=checkbox] {
+  display: none;
+}
+.getshare .getshare-button {
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  text-decoration: none;
+  font-family: Arial, Sans-Serif;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  min-width: 58px;
+  text-align: left;
+  padding: 2px;
+  color: #fff;
+}
+.getshare .getshare-button:before {
+  font-size: 12px;
+  margin-left: 1px;
+  vertical-align: 1px;
+  display: inline-block;
+  width: 17px;
+  text-align: center;
+  font-family: 'zocial-0-8-0', sans-serif;
+}
+.getshare .getshare-button.getshare-button-none {
+  background-color: #3b96d4;
+}
+.getshare .getshare-button.getshare-button-none.getshare-icon:before {
+  content: 'None';
+}
+.getshare .getshare-button.getshare-button-none .split {
+  color: #3b96d4;
+}
+.getshare .getshare-button.getshare-button-twitter,
+.getshare .getshare-button.getshare-button-twitterProfile {
+  background-color: #2daae1;
+}
+.getshare .getshare-button.getshare-button-twitter.getshare-icon:before,
+.getshare .getshare-button.getshare-button-twitterProfile.getshare-icon:before {
+  content: 'T';
+}
+.getshare .getshare-button.getshare-button-twitter .split,
+.getshare .getshare-button.getshare-button-twitterProfile .split {
+  color: #2daae1;
+}
+.getshare .getshare-button.getshare-button-facebook,
+.getshare .getshare-button.getshare-button-facebookFollower {
+  background-color: #3b5998;
+}
+.getshare .getshare-button.getshare-button-facebook.getshare-icon:before,
+.getshare .getshare-button.getshare-button-facebookFollower.getshare-icon:before {
+  content: 'f';
+}
+.getshare .getshare-button.getshare-button-facebook .split,
+.getshare .getshare-button.getshare-button-facebookFollower .split {
+  color: #3b5998;
+}
+.getshare .getshare-button.getshare-button-pinterest,
+.getshare .getshare-button.getshare-button-pinterestPins,
+.getshare .getshare-button.getshare-button-pinterestFollower {
+  background-color: #ca2128;
+}
+.getshare .getshare-button.getshare-button-pinterest.getshare-icon:before,
+.getshare .getshare-button.getshare-button-pinterestPins.getshare-icon:before,
+.getshare .getshare-button.getshare-button-pinterestFollower.getshare-icon:before {
+  content: 'p';
+}
+.getshare .getshare-button.getshare-button-pinterest .split,
+.getshare .getshare-button.getshare-button-pinterestPins .split,
+.getshare .getshare-button.getshare-button-pinterestFollower .split {
+  color: #ca2128;
+}
+.getshare .getshare-button.getshare-button-linkedin {
+  background-color: #1783bc;
+}
+.getshare .getshare-button.getshare-button-linkedin.getshare-icon:before {
+  content: 'L';
+}
+.getshare .getshare-button.getshare-button-linkedin .split {
+  color: #1783bc;
+}
+.getshare .getshare-button.getshare-button-delicious {
+  background-color: #2873cc;
+}
+.getshare .getshare-button.getshare-button-delicious.getshare-icon:before {
+  content: '#';
+}
+.getshare .getshare-button.getshare-button-delicious .split {
+  color: #2873cc;
+}
+.getshare .getshare-button.getshare-button-reddit {
+  background-color: #f26110;
+}
+.getshare .getshare-button.getshare-button-reddit.getshare-icon:before {
+  content: 'R';
+}
+.getshare .getshare-button.getshare-button-reddit .split {
+  color: #f26110;
+}
+.getshare .getshare-button.getshare-button-googleplus {
+  background-color: #dd4b39;
+}
+.getshare .getshare-button.getshare-button-googleplus.getshare-icon:before {
+  content: '+';
+}
+.getshare .getshare-button.getshare-button-googleplus .split {
+  color: #dd4b39;
+}
+.getshare .getshare-button.getshare-button-flattr {
+  background-color: #66b115;
+}
+.getshare .getshare-button.getshare-button-flattr.getshare-icon:before {
+  content: '%';
+}
+.getshare .getshare-button.getshare-button-flattr .split {
+  color: #66b115;
+}
+.getshare .getshare-button.getshare-button-stumbleupon {
+  background-color: #ea4b24;
+}
+.getshare .getshare-button.getshare-button-stumbleupon.getshare-icon:before {
+  content: 'S';
+}
+.getshare .getshare-button.getshare-button-stumbleupon .split {
+  color: #ea4b24;
+}
+.getshare .getshare-button.getshare-button-buffer {
+  background-color: #999;
+}
+.getshare .getshare-button.getshare-button-buffer.getshare-icon:before {
+  content: 'b';
+}
+.getshare .getshare-button.getshare-button-buffer .split {
+  color: #999;
+}
+.getshare .getshare-button.getshare-button-vk {
+  background-color: #4b709a;
+}
+.getshare .getshare-button.getshare-button-vk.getshare-icon:before {
+  content: 'V';
+}
+.getshare .getshare-button.getshare-button-vk .split {
+  color: #4b709a;
+}
+.getshare .getshare-button.getshare-button-pocket {
+  background-color: #ee4056;
+}
+.getshare .getshare-button.getshare-button-pocket.getshare-icon:before {
+  content: 'P';
+}
+.getshare .getshare-button.getshare-button-pocket .split {
+  color: #ee4056;
+}
+.getshare .getshare-button.getshare-button-weibo {
+  background-color: #eb182c;
+}
+.getshare .getshare-button.getshare-button-weibo.getshare-icon:before {
+  content: 'W';
+}
+.getshare .getshare-button.getshare-button-weibo .split {
+  color: #eb182c;
+}
+.getshare .getshare-button.getshare-button-githubProfile,
+.getshare .getshare-button.getshare-button-githubRepository {
+  background-color: #bbb;
+}
+.getshare .getshare-button.getshare-button-githubProfile.getshare-icon:before,
+.getshare .getshare-button.getshare-button-githubRepository.getshare-icon:before {
+  content: 'g';
+}
+.getshare .getshare-button.getshare-button-githubProfile .split,
+.getshare .getshare-button.getshare-button-githubRepository .split {
+  color: #bbb;
+}
+.getshare .getshare-button.getshare-button-dribbblePlayerLikes,
+.getshare .getshare-button.getshare-button-dribbblePlayerFollowers,
+.getshare .getshare-button.getshare-button-dribbbleShot {
+  background-color: #ea4c89;
+}
+.getshare .getshare-button.getshare-button-dribbblePlayerLikes.getshare-icon:before,
+.getshare .getshare-button.getshare-button-dribbblePlayerFollowers.getshare-icon:before,
+.getshare .getshare-button.getshare-button-dribbbleShot.getshare-icon:before {
+  content: 'D';
+}
+.getshare .getshare-button.getshare-button-dribbblePlayerLikes .split,
+.getshare .getshare-button.getshare-button-dribbblePlayerFollowers .split,
+.getshare .getshare-button.getshare-button-dribbbleShot .split {
+  color: #ea4c89;
+}
+.getshare .getshare-button.getshare-button-xing {
+  background-color: #126567;
+}
+.getshare .getshare-button.getshare-button-xing.getshare-icon:before {
+  content: 'X';
+}
+.getshare .getshare-button.getshare-button-xing .split {
+  color: #126567;
+}
+.getshare .getshare-button.getshare-button-instagram {
+  background-color: #3f729b;
+}
+.getshare .getshare-button.getshare-button-instagram.getshare-icon:before {
+  content: 'I';
+}
+.getshare .getshare-button.getshare-button-instagram .split {
+  color: #3f729b;
+}
+.getshare .getshare-button.getshare-button-surfingbird {
+  background-color: #26b1f6;
+}
+.getshare .getshare-button.getshare-button-surfingbird.getshare-icon:before {
+  content: 's';
+}
+.getshare .getshare-button.getshare-button-surfingbird .split {
+  color: #26b1f6;
+}
+.getshare .getshare-button.getshare-button-hackernews {
+  background-color: #f60;
+}
+.getshare .getshare-button.getshare-button-hackernews.getshare-icon:before {
+  content: 'Y';
+}
+.getshare .getshare-button.getshare-button-hackernews .split {
+  color: #f60;
+}
+.getshare .getshare-button.getshare-button-bitcoin {
+  background-color: #ebb837;
+}
+.getshare .getshare-button.getshare-button-bitcoin.getshare-icon:before {
+  content: 'BTC';
+}
+.getshare .getshare-button.getshare-button-bitcoin .split {
+  color: #ebb837;
+}
+.getshare .getshare-button.getshare-button-litecoin {
+  background-color: #909090;
+}
+.getshare .getshare-button.getshare-button-litecoin.getshare-icon:before {
+  content: 'LTC';
+}
+.getshare .getshare-button.getshare-button-litecoin .split {
+  color: #909090;
+}
+.getshare .getshare-button.getshare-button-feathercoin {
+  background-color: #9f9078;
+}
+.getshare .getshare-button.getshare-button-feathercoin.getshare-icon:before {
+  content: 'FTC';
+}
+.getshare .getshare-button.getshare-button-feathercoin .split {
+  color: #9f9078;
+}
+.getshare .getshare-button.getshare-button-freicoin {
+  background-color: #9a9a9a;
+}
+.getshare .getshare-button.getshare-button-freicoin.getshare-icon:before {
+  content: 'FRC';
+}
+.getshare .getshare-button.getshare-button-freicoin .split {
+  color: #9a9a9a;
+}
+.getshare .getshare-button.getshare-button-terracoin {
+  background-color: #fcc617;
+}
+.getshare .getshare-button.getshare-button-terracoin.getshare-icon:before {
+  content: 'TRC';
+}
+.getshare .getshare-button.getshare-button-terracoin .split {
+  color: #fcc617;
+}
+.getshare .getshare-button.getshare-button-peercoin {
+  background-color: #d8ad22;
+}
+.getshare .getshare-button.getshare-button-peercoin.getshare-icon:before {
+  content: 'PPC';
+}
+.getshare .getshare-button.getshare-button-peercoin .split {
+  color: #d8ad22;
+}
+.getshare .getshare-button.getshare-button-novacoin {
+  background-color: #deb75f;
+}
+.getshare .getshare-button.getshare-button-novacoin.getshare-icon:before {
+  content: 'NVC';
+}
+.getshare .getshare-button.getshare-button-novacoin .split {
+  color: #deb75f;
+}
+.getshare .getshare-button.getshare-button-bbqcoin {
+  background-color: #f74913;
+}
+.getshare .getshare-button.getshare-button-bbqcoin.getshare-icon:before {
+  content: 'BQC';
+}
+.getshare .getshare-button.getshare-button-bbqcoin .split {
+  color: #f74913;
+}
+.getshare .getshare-button.getshare-button-bytecoin {
+  background-color: #1d933e;
+}
+.getshare .getshare-button.getshare-button-bytecoin.getshare-icon:before {
+  content: 'BTE';
+}
+.getshare .getshare-button.getshare-button-bytecoin .split {
+  color: #1d933e;
+}
+.getshare .getshare-button.getshare-button-bitbar {
+  background-color: #e1ca87;
+}
+.getshare .getshare-button.getshare-button-bitbar.getshare-icon:before {
+  content: 'BTB';
+}
+.getshare .getshare-button.getshare-button-bitbar .split {
+  color: #e1ca87;
+}
+.getshare .getshare-button.getshare-button-digitalcoin {
+  background-color: #000101;
+}
+.getshare .getshare-button.getshare-button-digitalcoin.getshare-icon:before {
+  content: 'DGC';
+}
+.getshare .getshare-button.getshare-button-digitalcoin .split {
+  color: #000101;
+}
+.getshare .getshare-button.getshare-button-jkcoin {
+  background-color: #b18343;
+}
+.getshare .getshare-button.getshare-button-jkcoin.getshare-icon:before {
+  content: 'JKC';
+}
+.getshare .getshare-button.getshare-button-jkcoin .split {
+  color: #b18343;
+}
+.getshare .getshare-button.getshare-button-frankos {
+  background-color: #0733ce;
+}
+.getshare .getshare-button.getshare-button-frankos.getshare-icon:before {
+  content: 'FRK';
+}
+.getshare .getshare-button.getshare-button-frankos .split {
+  color: #0733ce;
+}
+.getshare .getshare-button.getshare-button-goldcoin {
+  background-color: #f5d138;
+}
+.getshare .getshare-button.getshare-button-goldcoin.getshare-icon:before {
+  content: 'GLD';
+}
+.getshare .getshare-button.getshare-button-goldcoin .split {
+  color: #f5d138;
+}
+.getshare .getshare-button.getshare-button-worldcoin {
+  background-color: #276d42;
+}
+.getshare .getshare-button.getshare-button-worldcoin.getshare-icon:before {
+  content: 'WDC';
+}
+.getshare .getshare-button.getshare-button-worldcoin .split {
+  color: #276d42;
+}
+.getshare .getshare-button.getshare-button-craftcoin {
+  background-color: #32c76a;
+}
+.getshare .getshare-button.getshare-button-craftcoin.getshare-icon:before {
+  content: 'CRC';
+}
+.getshare .getshare-button.getshare-button-craftcoin .split {
+  color: #32c76a;
+}
+.getshare .getshare-button.getshare-button-quarkcoin {
+  background-color: #3f93df;
+}
+.getshare .getshare-button.getshare-button-quarkcoin.getshare-icon:before {
+  content: 'QRK';
+}
+.getshare .getshare-button.getshare-button-quarkcoin .split {
+  color: #3f93df;
+}
+.getshare .getshare-button.getshare-button-codepenProfile,
+.getshare .getshare-button.getshare-button-codepenPen {
+  background-color: #222;
+}
+.getshare .getshare-button.getshare-button-codepenProfile.getshare-icon:before,
+.getshare .getshare-button.getshare-button-codepenPen.getshare-icon:before {
+  content: 'c';
+}
+.getshare .getshare-button.getshare-button-codepenProfile .split,
+.getshare .getshare-button.getshare-button-codepenPen .split {
+  color: #222;
+}
+.getshare .getshare-button.getshare-button-none.getshare-icon:before,
+.getshare .getshare-button.getshare-button-hackernews.getshare-icon:before,
+.getshare .getshare-button.getshare-button-bitcoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-litecoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-feathercoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-freicoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-terracoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-peercoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-novacoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-bbqcoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-bytecoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-bitbar.getshare-icon:before,
+.getshare .getshare-button.getshare-button-digitalcoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-jkcoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-frankos.getshare-icon:before,
+.getshare .getshare-button.getshare-button-goldcoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-worldcoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-craftcoin.getshare-icon:before,
+.getshare .getshare-button.getshare-button-quarkcoin.getshare-icon:before {
+  font-family: Arial, Sans-Serif;
+  font-size: 9px;
+  vertical-align: 1px;
+  margin-left: 0px;
+}
+.getshare .getshare-button.getshare-button-none.getshare-icon:before {
+  font-size: 8px;
+  vertical-align: 2px;
+}
+.getshare .getshare-text {
+  font-size: 10px;
+  vertical-align: 2px;
+}
+.getshare .getshare-counter {
+  display: inline-block;
+  margin: 1px 3px;
+  font-family: Arial, Sans-Serif;
+  font-size: 10px;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -o-transition: color 1s;
+  -ms-transition: color 1s;
+  transition: color 1s;
+}
+.getshare .getshare-counter.split,
+.getshare .getshare-counter.inside {
+  float: right;
+}
+.getshare .getshare-counter.split {
+  background-color: #fff;
+  -webkit-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+  padding-right: 3px;
+  text-align: right;
+  line-height: 19px;
+  width: 36px;
+  margin-top: -2px;
+  margin-right: -2px;
+  padding-top: 1px;
+}
+.getshare .getshare-counter.split.getshare-loader {
+  padding: 2px 3px 2px 0;
+}
+.getshare .getshare-counter.split.border {
+  line-height: 17px;
+  width: 35px;
+  margin-top: -1px;
+  margin-right: -1px;
+}
+.getshare .getshare-counter.split.border.getshare-loader {
+  padding: 1px 3px 1px 0;
+}
+.getshare .getshare-counter.split.getshare-loader:before {
+  margin: 7px 9px !important;
+  -webkit-box-shadow: 0px -7px 0px #000, 5px -5px 0px rgba(0,0,0,0.9), 7px 0px 1px rgba(0,0,0,0.8), 5px 5px 1px rgba(0,0,0,0.7), 0px 7px 2px rgba(0,0,0,0.6), -5px 5px 2px rgba(0,0,0,0.5), -7px 0px 3px rgba(0,0,0,0.4), -5px -5px 3px rgba(0,0,0,0.3);
+  box-shadow: 0px -7px 0px #000, 5px -5px 0px rgba(0,0,0,0.9), 7px 0px 1px rgba(0,0,0,0.8), 5px 5px 1px rgba(0,0,0,0.7), 0px 7px 2px rgba(0,0,0,0.6), -5px 5px 2px rgba(0,0,0,0.5), -7px 0px 3px rgba(0,0,0,0.4), -5px -5px 3px rgba(0,0,0,0.3);
+}
+.getshare .getshare-counter.getshare-loader {
+  color: rgba(0,0,0,0) !important;
+}
+.getshare .getshare-counter.getshare-loader:before {
+  content: '';
+  display: block;
+  float: right;
+  width: 2px;
+  height: 2px;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 6px 9px 8px 9px !important;
+  -webkit-box-shadow: 0px -7px 0px #fff, 5px -5px 0px rgba(255,255,255,0.9), 7px 0px 1px rgba(255,255,255,0.8), 5px 5px 1px rgba(255,255,255,0.7), 0px 7px 2px rgba(255,255,255,0.6), -5px 5px 2px rgba(255,255,255,0.5), -7px 0px 3px rgba(255,255,255,0.4), -5px -5px 3px rgba(255,255,255,0.3);
+  box-shadow: 0px -7px 0px #fff, 5px -5px 0px rgba(255,255,255,0.9), 7px 0px 1px rgba(255,255,255,0.8), 5px 5px 1px rgba(255,255,255,0.7), 0px 7px 2px rgba(255,255,255,0.6), -5px 5px 2px rgba(255,255,255,0.5), -7px 0px 3px rgba(255,255,255,0.4), -5px -5px 3px rgba(255,255,255,0.3);
+  -webkit-transform-origin: 50%;
+  -moz-transform-origin: 50%;
+  -o-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: getshareloader 0.5s steps(16, end) infinite;
+  -moz-animation: getshareloader 0.5s steps(16, end) infinite;
+  -o-animation: getshareloader 0.5s steps(16, end) infinite;
+  -ms-animation: getshareloader 0.5s steps(16, end) infinite;
+  animation: getshareloader 0.5s steps(16, end) infinite;
+}
+.getshare .getshare-counter.getshare-loader .border:before {
+  margin: 7px 9px !important;
+}
+.getshare .getshare-popover {
+  z-index: 999;
+  display: none;
+  position: absolute;
+  background-color: #f3f4f5;
+  border: 1px solid #e3e4e5;
+  text-align: right;
+  padding: 3px 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.2);
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.2);
+}
+.getshare .getshare-popover:after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #f3f4f5;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  z-index: 998;
+}
+.getshare .getshare-popover.right:after {
+  left: 0;
+  margin-left: 20px;
+}
+.getshare .getshare-popover.left {
+  right: 0;
+}
+.getshare .getshare-popover.left:after {
+  right: 0;
+  margin-right: 20px;
+}
+.getshare .getshare-popover.top {
+  margin: -5px 0;
+}
+.getshare .getshare-popover.top:after {
+  margin-bottom: -3px;
+  bottom: 0;
+  border-bottom: 1px solid #e3e4e5;
+  border-right: 1px solid #e3e4e5;
+}
+.getshare .getshare-popover.bottom {
+  top: auto !important;
+  margin: 5px 0;
+}
+.getshare .getshare-popover.bottom:after {
+  margin-top: -3px;
+  top: 0;
+  border-top: 1px solid #e3e4e5;
+  border-left: 1px solid #e3e4e5;
+}
+.getshare .getshare-popover label {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+}
+.getshare .getshare-popover > div {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+}
+.getshare .getshare-popover iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+.getshare .getshare-popover .getshare-coin-address {
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+.getshare .getshare-popover .getshare-coin-link {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: #6495ed;
+}
+.getshare input[type=checkbox]:checked ~ .getshare-popover,
+.getshare input[type=checkbox][checked=checked] ~ .getshare-popover {
+  display: block;
+}
+@-moz-keyframes getshareloader {
+  0% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes getshareloader {
+  0% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes getshareloader {
+  0% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes getshareloader {
+  0% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes getshareloader {
+  0% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
