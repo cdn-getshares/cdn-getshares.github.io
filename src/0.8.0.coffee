@@ -359,6 +359,16 @@ class @GetShare
           query:
             url: "http://api.getshar.es/counts/flattr/{encUrl}/?callback=?"
             path: ""
+      when "youtubeSubscriber"
+        button: {attr: {title: "View Profile on YouTube"}}
+        popover:
+          target: "_blank"
+          options: false
+          url: "http://www.youtube.com/{id}"
+        counter:
+          query:
+            url: "http://gdata.youtube.com/feeds/api/users/{id}?alt=json&callback=?"
+            path: "entry.yt$statistics.subscriberCount"
       when "stumbleupon" #JSON to JSONP - No API with JSONP found
         button: {attr: {title: "Share on StumbleUpon"}}
         popover:

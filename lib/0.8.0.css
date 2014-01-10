@@ -197,6 +197,15 @@
 .getshare .getshare-button.getshare-button-dribbbleShot .split {
   color: #ea4c89;
 }
+.getshare .getshare-button.getshare-button-youtube {
+  background-color: #c4302b;
+}
+.getshare .getshare-button.getshare-button-youtube.getshare-icon:before {
+  content: 'y';
+}
+.getshare .getshare-button.getshare-button-youtube .split {
+  color: #c4302b;
+}
 .getshare .getshare-button.getshare-button-xing {
   background-color: #126567;
 }
