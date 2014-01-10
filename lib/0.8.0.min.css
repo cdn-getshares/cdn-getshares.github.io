@@ -1,4 +1,4 @@
-@import url("http://beta.getshar.es/fonts/0.8.0/zocial.css");
+@import url("http://getshar.es/fonts/0.8.0/zocial.css");
 .getshare{position:relative;display:inline-block;height:20px;margin:5px;}
 .getshare input[type=checkbox]{display:none}
 .getshare .getshare-button{cursor:pointer;display:inline-block;height:16px;text-decoration:none;font-family:Arial,Sans-Serif;font-size:14px;line-height:16px;-webkit-border-radius:2px;border-radius:2px;min-width:58px;text-align:left;padding:2px;color:#fff;}
