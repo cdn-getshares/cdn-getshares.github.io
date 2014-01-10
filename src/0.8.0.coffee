@@ -507,7 +507,7 @@ class @GetShare
         popover:
           target: "_blank"
           options: false
-          url: "instagram.com/{id}"
+          url: "http://instagram.com/{id}"
         counter:
           query:
             url: "http://api.getshar.es/counts/instagram/{id}/?callback=?"
